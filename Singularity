@@ -8,8 +8,8 @@ MAINTAINER truatpasteurdotfr
 BootStrap: docker
 From: alpine:latest
 
-%runscript
-echo "This is what happens when you run the container..."
+#%runscript
+#echo "This is what happens when you run the container..."
 
 #%post
 #echo "Hello from inside the container"
