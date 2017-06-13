@@ -10,10 +10,10 @@ From: alpine:latest
 echo "This is what happens when you run the container..."
 /bin/sh
 
-#%post
-#echo "Hello from inside the container"
-#apk update && apk upgrade
-#touch /`date -u -Iseconds`
+%post
+echo "Hello from inside the container"
+apk update && apk upgrade
+touch /`date -u -Iseconds`
 
 %labels
 MAINTAINER truatpasteurdotfr
