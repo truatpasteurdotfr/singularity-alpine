@@ -8,6 +8,7 @@ From: alpine:latest
 
 %runscript
 echo "This is what happens when you run the container..."
+/bin/sh
 
 #%post
 #echo "Hello from inside the container"
