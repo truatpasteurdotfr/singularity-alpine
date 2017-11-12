@@ -15,5 +15,8 @@ echo "Hello from inside the container"
 apk update && apk upgrade
 touch /`date -u -Iseconds`
 
+# tars.pasteur.fr specific (no overlays on CentOS-6)
+mkdir -p /pasteur/{homes,scratch,entites} /local/{scratch,flash} /mount/gensoft2 
+
 %labels
 MAINTAINER truatpasteurdotfr
